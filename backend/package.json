@@ -1,0 +1,26 @@
+{
+  "name": "edp-project",
+  "version": "1.0.0",
+  "description": "backend for the EDP project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rush1kesh-010/EDP-Project.git"
+  },
+  "keywords": [
+    "backend",
+    "node",
+    "nodejs",
+    "medicine",
+    "medical"
+  ],
+  "author": "Rushikesh Shinde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rush1kesh-010/EDP-Project/issues"
+  },
+  "homepage": "https://github.com/rush1kesh-010/EDP-Project#readme"
+}
