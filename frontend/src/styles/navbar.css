@@ -1,0 +1,38 @@
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #e6e6e6;
+}
+
+nav {
+  display: flex; /* Enable flexbox for horizontal arrangement */
+  align-items: center; /* Vertically center elements within the navbar */
+  justify-content: space-around; /* Distribute space around elements */
+}
+
+nav ul {
+  display: flex; /* Arrange list items horizontally */
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Reset default margins */
+  padding: 0; /* Reset default padding */
+}
+
+nav ul li {
+  margin-right: 15px; /* Add spacing between list items */
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 15px;
+}
