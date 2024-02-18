@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --headlineinfo-paragraphs: Inter;
+
+  /* font sizes */
+  --headlineinfo-paragraphs-size: 20px;
+  --title-1tabstitlesforms-size: 28px;
+  --header-size: 34px;
+
+  /* Colors */
+  --neutrals-neutrals08: #dbdbdb;
+  --color-gainsboro-100: #d9d9d9;
+  --color-silver: #c4c4c4;
+  --color-darkgray: #a0a0a0;
+  --color-gray: #848282;
+  --neutrals-neutrals02: #171717;
+  --color-white: #fff;
+  --neutrals-neutrals04: #4c4c4c;
+  --brand-color-primary-light-blue-brand-color-primary-05: #0174cf;
+
+  /* Gaps */
+  --gap-xl: 20px;
+  --gap-65xl: 84px;
+
+  /* Paddings */
+  --padding-lg: 18px;
+  --padding-8xs: 5px;
+  --padding-xl: 20px;
+}
