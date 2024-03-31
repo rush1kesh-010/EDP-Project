@@ -1,0 +1,110 @@
+.upper{
+    height: 196px;
+}
+.lower{
+    height: 37px
+}
+td{
+    padding:0px !important;
+    height: 27px !important;
+}
+.table{
+    margin-bottom: 0px;
+    padding: 0px !important; 
+}
+.ddbtn{
+    width: 10px;
+    height: 27px;
+}
+.dtbtn{
+    height: 27px;
+    width: 213px;
+}
+#col .input-group .atbtn{
+   padding-left: 5px !important;
+   margin-left: 5px;
+}
+img:hover{
+    background-color: rgb(88, 194, 255);
+    border-radius: 10px;
+}
+
+.dbtn{
+    height:18px;
+    width: 18px;
+    margin-right: 14px;
+    border-radius: 5px;
+
+}
+.text{
+    width: 81px;
+    height: 27px;
+    margin-left: 23px;
+    margin-right: 12px;
+    border-radius: 5px;
+}
+#col{
+    width: 229px;
+    height: 27px;
+
+}
+.d{
+    height: 27px;
+}
+.e{
+    height: 27px;
+}
+td.f{
+   
+    width: 64px;
+    margin-right: 0px !important;
+    height: 27px;
+    border-radius: 5px;
+}
+td.up{
+    width: 18px;
+    height: 18px;
+    margin-right: 12px !important;
+    
+}
+.drow{
+    height: 27px;
+    margin-bottom:7px ;
+}
+td.down{
+    width: 18px;
+    height: 18px;
+   }
+.h{
+    
+    vertical-align: 5% !important;
+}
+tbody{
+    margin-bottom: 7px;
+}
+.w{
+    font-size: 10px;
+    font-weight: 700;
+    width:200;
+    margin-left: 22px;
+    margin-right: 0px;
+    color: red;
+    border: 5px;
+    border-color: aqua;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    
+}
+.w2{
+    font-size: 10px;
+    font-weight: 700;
+    width:200;
+    margin-left: 22px;
+    margin-right: 0px;
+    color: rgb(96, 214, 99);
+    border: 5px;
+    border-color: aqua;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    
+}
