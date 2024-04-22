@@ -4,6 +4,7 @@ import LandingPage from './Pages/landing';
 import LoginPage from './Pages/login';
 import Home from './Pages/home';
 import Dashboard from './Pages/dashboard';
+import PatientProfile from './Pages/patient-profile';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
           <Route path='/login' element={<LoginPage/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/patient-profile' element={<PatientProfile/>}/>
+
      </Routes>
      </BrowserRouter>
     </div>
