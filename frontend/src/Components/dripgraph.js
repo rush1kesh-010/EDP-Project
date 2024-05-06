@@ -1,19 +1,23 @@
 import {
     Card,
     CardBody,
-    CardFooter,
     CardHeader,
     Typography,
   } from "@material-tailwind/react";
   import Chart from "react-apexcharts";
+  import { Square3Stack3DIcon } from "@heroicons/react/24/outline";
+   
+  // If you're using Next.js please use the dynamic import for react-apexcharts and remove the import from the top for the react-apexcharts
+  // import dynamic from "next/dynamic";
+  // const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
    
   const chartConfig = {
-    type: "bar",
+    type: "line",
     height: 240,
     series: [
       {
-        name: "length",
-        data: [28, 14, 19, 22, 26,10],
+        name: "intensity",
+        data: [71, 42, 19, 30, 40, 60, 50, 40, 70, 50],
       },
     ],
     options: {
@@ -29,11 +33,12 @@ import {
         enabled: false,
       },
       colors: ["#348ACF"],
-      plotOptions: {
-        bar: {
-          columnWidth: "40%",
-          borderRadius: 1,
-        },
+      stroke: {
+        lineCap: "round",
+        curve: "smooth",
+      },
+      markers: {
+        size: 0,
       },
       xaxis: {
         axisTicks: {
@@ -51,12 +56,15 @@ import {
           },
         },
         categories: [
-          "10",
-          "20",
-          "30",
-          "40",
-          "50",
-          "60",
+          " ",
+          " ",
+          " ",
+          "  ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
         ],
       },
       yaxis: {
@@ -71,11 +79,11 @@ import {
       },
       grid: {
         show: true,
-        borderColor: "#BBBBBB",
+        borderColor: "#222222",
         strokeDashArray: 0,
         xaxis: {
           lines: {
-            show: false,
+            show: true,
           },
         },
         padding: {
@@ -84,7 +92,7 @@ import {
         },
       },
       fill: {
-        opacity: 10,
+        opacity: 0.8,
       },
       tooltip: {
         theme: "dark",
@@ -92,7 +100,7 @@ import {
     },
   };
    
-  export default function IntAirBubble() {
+  export default function DripIntenseGraph() {
     return (
       <Card>
         <CardHeader
@@ -102,11 +110,16 @@ import {
           className="flex flex-col gap-4 rounded-none md:flex-row md:items-center"
         >
           
+         
         </CardHeader>
         <CardBody className="px-2 pb-0">
           <Chart {...chartConfig} />
         </CardBody>
-      
+        <div>
+           <Typography variant="small" color="gray" className="max-w-sm md:flex-row md:items-center font-normal">
+            Intensity of drip flow
+           </Typography>
+           </div>
       </Card>
     );
   }

@@ -33,6 +33,32 @@ export default function PatientProfileTab() {
 
   return (
     <div className='hidden md:flex lg:flex'>
+<<<<<<< HEAD
+        <div className='bg-[#f1f3f5] hover:bg-[white] py-2 px-2 w-56 rounded-t-full'>
+           <p className='text-[20px] text-[#87afcf] hover:text-[#0174cf] font-medium'>Primary details</p>
+        </div> 
+        <div className='bg-[#f1f3f5] hover:bg-[white] py-2 px-2 w-56 rounded-t-full'>
+           <p className='text-[20px] text-[#87afcf] hover:text-[#0174cf] font-medium'>Vital details</p>
+        </div> 
+        <div className='bg-[white] py-2 px-2 w-56 rounded-t-full'>
+         <Link to='/patient-profiledrip'>
+            <p className='text-[20px] text-[#0174cf] font-medium'>Drug Administration </p>
+         </Link>
+        </div> 
+        
+        <div className='bg-[#f1f3f5] hover:bg-[white] py-2 px-2 w-56 rounded-t-full'>
+        <Link to='/patient-profiledrug'>
+         
+           <p className='text-[20px] text-[#87afcf] hover:text-[#0174cf] font-medium'>Drip Monitoring</p>
+         </Link>
+        </div> 
+        <div className='bg-[#f1f3f5] hover:bg-[white] py-2 px-2 w-56 rounded-t-full'>
+          <Link to='/patient-profileairbubble'>
+
+           <p className='text-[20px] text-[#87afcf]  hover:text-[#0174cf] font-medium'>Air Bubble</p>
+          </Link>
+        </div>
+=======
       <Link to='/patient-profile' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('primarydetails')}`} onClick={() => handleTabClick('primarydetails')}>
         <p className='text-[20px] font-medium'>Primary details</p>
       </Link>
@@ -48,6 +74,7 @@ export default function PatientProfileTab() {
       <Link to='/patient-profileairbubble' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('patientprofileairbubble')}`} onClick={() => handleTabClick('patientprofileairbubble')}>
         <p className='text-[20px] font-medium'>Air Bubble</p>
       </Link>
+>>>>>>> 18c96b88b54112c5d9cf2f5443f897d5b6d7c4f3
     </div>
   );
 }
