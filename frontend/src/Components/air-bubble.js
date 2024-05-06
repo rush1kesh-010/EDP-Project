@@ -1,5 +1,5 @@
-import React from 'react'
-import heart from "../Images/bubble-limit.png";
+import React from 'react';
+import Cylinder from './filling-cylinder';
 export default function AirBubble() {
   return (
     <div className="bg-[white] p-2 rounded-xl">
@@ -22,8 +22,9 @@ export default function AirBubble() {
         10 sec ago
         </p>
       </div>
-      <div>
-        <img className="w-9/12 ml-4" src={heart} />
+      <div className='flex flex-col items-center'>
+        <p className='text-start text-xs mt-1'>Air Bubble Limit</p>
+        <Cylinder value={4} />
       </div>
     </div>
   </div>

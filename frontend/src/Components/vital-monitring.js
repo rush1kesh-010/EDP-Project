@@ -1,5 +1,6 @@
 import React from 'react'
-import heart from "../Images/heart.png";
+import Cylinder from './filling-cylinder';
+import Heart from '../Images/heart.png'
 
 export default function VitalMonitring() {
   return (
@@ -28,8 +29,9 @@ export default function VitalMonitring() {
                       60 mins ago
                     </p>
                   </div>
-                  <div>
-                    <img className="w-2/4" src={heart} />
+                  <div className="flex flex-col items-center">
+                    <img alt="heart" className="w-9" src={Heart}></img>
+                    <Cylinder value={5} />
                   </div>
                 </div>
               </div>
