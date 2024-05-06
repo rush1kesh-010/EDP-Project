@@ -1,19 +1,47 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const DataHistoryTable = () => {
   const [data, setData] = useState([
-    { fileName: 'Blood report', fileSize: 15000, dateTime: '10:32 am 23 Oct 2023' },
-    { fileName: 'CT scan', fileSize: 15000, dateTime: '12:02 pm 03 Nov 2023' },
-    { fileName: 'Blood report', fileSize: 20000, dateTime: '02:05 pm 12 Oct 2023' },
-    { fileName: 'Phys Check', fileSize: 15000, dateTime: '03:30 pm 03 Nov 2023' },
-    { fileName: 'Ortho Check', fileSize: 20000, dateTime: '4:45 pm 23 Oct 2024' },
-    { fileName: 'Med Pres', fileSize: 60000, dateTime: '06:00 pm 03 Nov 2023' },
-    { fileName: 'CT scan', fileSize: 5000, dateTime: '07:05 pm 12 Oct 2023' },
-    { fileName: 'Blood report', fileSize: 20000, dateTime: '08:35 pm 03 Nov 2023' },
-    { fileName: 'Phys check', fileSize: 25000, dateTime: '09:45 pm 12 Oct 2023' },
-    { fileName: 'Blood report', fileSize: 10000, dateTime: '11:00 pm 03 Nov 2023' },
+    {
+      fileName: "Blood report",
+      fileSize: 15000,
+      dateTime: "10:32 am 23 Apr 2024",
+    },
+    { fileName: "CT scan", fileSize: 15000, dateTime: "12:02 pm 05 Apr 2024" },
+    {
+      fileName: "Blood report",
+      fileSize: 20000,
+      dateTime: "02:05 pm 17 Mar 2024",
+    },
+    {
+      fileName: "Phys Check",
+      fileSize: 15000,
+      dateTime: "03:30 pm 01 Mar 2024",
+    },
+    {
+      fileName: "Ortho Check",
+      fileSize: 20000,
+      dateTime: "4:45 pm 15 Feb 2024",
+    },
+    { fileName: "Med Pres", fileSize: 60000, dateTime: "06:00 pm 07 Feb 2024" },
+    { fileName: "CT scan", fileSize: 5000, dateTime: "07:05 pm 11 Jan 2024" },
+    {
+      fileName: "Blood report",
+      fileSize: 20000,
+      dateTime: "08:35 pm 03 Jan 2024",
+    },
+    {
+      fileName: "Phys check",
+      fileSize: 25000,
+      dateTime: "09:45 pm 12 Dec 2023",
+    },
+    {
+      fileName: "Blood report",
+      fileSize: 10000,
+      dateTime: "11:00 pm 03 Nov 2023",
+    },
   ]);
   const [editingIndex, setEditingIndex] = useState(null);
 
@@ -43,10 +71,11 @@ const DataHistoryTable = () => {
    
         <h2 className="text-lg font-semibold">Data History</h2>
         <div className="space-x-2">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Refresh</button>
-          <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md">See all</button>
-          <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md" onClick={() => handleEdit(null)}>
-            Edit
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
+            Refresh
+          </button>
+          <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md">
+            See all
           </button>
         </div>
       </div>
@@ -73,16 +102,26 @@ const DataHistoryTable = () => {
                     className="w-full px-2 py-1 border border-gray-300 rounded-md"
                   />
                 ) : (
-                  item.fileName
+                  <a
+                    href={`https://example.com/${item.fileName}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.fileName}
+                  </a>
                 )}
               </td>
+
               <td className="px-4 py-2">
                 {editingIndex === index ? (
                   <input
                     type="number"
                     value={item.fileSize}
                     onChange={(e) => {
-                      const updatedData = { ...item, fileSize: parseInt(e.target.value, 10) };
+                      const updatedData = {
+                        ...item,
+                        fileSize: parseInt(e.target.value, 10),
+                      };
                       handleSave(index, updatedData);
                     }}
                     className="w-full px-2 py-1 border border-gray-300 rounded-md"
@@ -111,7 +150,6 @@ const DataHistoryTable = () => {
         </tbody>
       </table>
     </div>
-  
   );
 };
 

@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../Components/common-comp/header";
 import "../Css/home.css";
 import PatientSidebar from "../Components/common-comp/patient-sidebar";
-import PatientDrugAdministration from "../Components/patient-drug-administration";
 import PatientProfileTab from "../Components/common-comp/patient-profile-tab";
 export default function PatientProfile() {
   return (

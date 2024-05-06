@@ -3,15 +3,15 @@ import { Link, useLocation } from 'react-router-dom';
 
 export default function PatientProfileTab() {
   const location = useLocation();
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState('primarydetails'); // Initialize with 'primarydetails'
 
   useEffect(() => {
     // Define a mapping between tab names and paths
     const tabPathMap = {
-      'primarydetails': '/patient-profile',
-      'vitaldetails': '/patient-profile/vitaldetails',
+      'primarydetails': '/patient-profileprimarydetails',
+      'vitaldetails': '/patient-profilevitals',
       'patientprofiledrip': '/patient-profiledrip',
-      'dripmonitoring': '/patient-profiledrip/dripmonitoring',
+      'patientprofiledrug': '/patient-profiledrug',
       'patientprofileairbubble': '/patient-profileairbubble',
     };
 
@@ -42,7 +42,7 @@ export default function PatientProfileTab() {
       <Link to='/patient-profiledrip' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('patientprofiledrip')}`} onClick={() => handleTabClick('patientprofiledrip')}>
         <p className='text-[20px] font-medium'>Drug Administration</p>
       </Link>
-      <Link to='/patient-profiledrug' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('dripmonitoring')}`} onClick={() => handleTabClick('dripmonitoring')}>
+      <Link to='/patient-profiledrug' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('patientprofiledrug')}`} onClick={() => handleTabClick('patientprofiledrug')}>
         <p className='text-[20px] font-medium'>Drip Monitoring</p>
       </Link>
       <Link to='/patient-profileairbubble' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('patientprofileairbubble')}`} onClick={() => handleTabClick('patientprofileairbubble')}>

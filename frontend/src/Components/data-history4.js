@@ -4,16 +4,16 @@ import React, { useState } from 'react';
 
 const DataHistoryTable4 = () => {
   const [data, setData] = useState([
-    { HeartRate: '150', Pulse: 15, DateTime: '10:32 ' },
-    { HeartRate: '57', Pulse: 15, DateTime: '12:02 ' },
-    { HeartRate: '97', Pulse: 20, DateTime: '02:05' },
-    { HeartRate: '80', Pulse: 15, DateTime: '03:30 ' },
-    { HeartRate: '100', Pulse: 20, DateTime: '4:45 ' },
-    { HeartRate: '105', Pulse: 60, DateTime: '06:00' },
-    { HeartRate: '150', Pulse: 5, DateTime: '07:05 ' },
-    { HeartRate: '100', Pulse: 20, DateTime: '08:35' },
-    { HeartRate: '125', Pulse: 25, DateTime: '09:45' },
-    { HeartRate: '90', Pulse: 10, DateTime: '11:00 ' },
+    { HeartRate: '150', DateTime: '10:32 am' },
+    { HeartRate: '57', DateTime: '12:02 pm' },
+    { HeartRate: '97', DateTime: '02:05 pm' },
+    { HeartRate: '80', DateTime: '03:30 pm' },
+    { HeartRate: '100', DateTime: '4:45 pm' },
+    { HeartRate: '105', DateTime: '06:00 pm' },
+    { HeartRate: '150', DateTime: '07:05 pm' },
+    { HeartRate: '100', DateTime: '08:35 pm' },
+    { HeartRate: '125', DateTime: '09:45 pm' },
+    { HeartRate: '90', DateTime: '11:00 pm' },
   ]);
   const [editingIndex, setEditingIndex] = useState(null);
 
@@ -45,17 +45,14 @@ const DataHistoryTable4 = () => {
         <div className="space-x-2">
           <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Refresh</button>
           <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md">See all</button>
-          <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md" onClick={() => handleEdit(null)}>
-            Edit
-          </button>
+          
         </div>
       </div>
       <table className="w-full table-auto">
         <thead>
           <tr className="bg-gray-200">
-            <th className="px-4 py-2 text-left">HeartRate</th>
-            <th className="px-4 py-2 text-left">No of drops/min</th>
-            <th className="px-4 py-2 text-left">DateTime</th>
+            <th className="px-4 py-2 text">HeartRate</th>
+            <th className="px-4 py-2 text">Time</th>
           </tr>
         </thead>
         <tbody>
@@ -74,21 +71,6 @@ const DataHistoryTable4 = () => {
                   />
                 ) : (
                   item.HeartRate
-                )}
-              </td>
-              <td className="px-4 py-2">
-                {editingIndex === index ? (
-                  <input
-                    type="number"
-                    value={item.Pulse}
-                    onChange={(e) => {
-                      const updatedData = { ...item, Pulse: parseInt(e.target.value, 10) };
-                      handleSave(index, updatedData);
-                    }}
-                    className="w-full px-2 py-1 border border-gray-300 rounded-md"
-                  />
-                ) : (
-                  formatPulse(item.Pulse)
                 )}
               </td>
               <td className="px-4 py-2">
