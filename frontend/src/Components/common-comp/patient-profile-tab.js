@@ -16,8 +16,12 @@ export default function PatientProfileTab() {
             <p className='text-[20px] text-[#0174cf] font-medium'>Drug Administration </p>
          </Link>
         </div> 
+        
         <div className='bg-[#f1f3f5] hover:bg-[white] py-2 px-2 w-56 rounded-t-full'>
+        <Link to='/patient-profiledrug'>
+         
            <p className='text-[20px] text-[#87afcf] hover:text-[#0174cf] font-medium'>Drip Monitoring</p>
+         </Link>
         </div> 
         <div className='bg-[#f1f3f5] hover:bg-[white] py-2 px-2 w-56 rounded-t-full'>
           <Link to='/patient-profileairbubble'>
