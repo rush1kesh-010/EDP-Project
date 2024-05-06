@@ -52,11 +52,11 @@ import {
         },
         categories: [
           "10",
-          "12",
-          "02",
-          "03",
-          "04",
-          "06",
+          "20",
+          "30",
+          "40",
+          "50",
+          "60",
         ],
       },
       yaxis: {
@@ -94,6 +94,8 @@ import {
    
   export default function IntAirBubble() {
     return (
+      <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 ">
+
       <Card>
         <CardHeader
           floated={false}
@@ -105,8 +107,12 @@ import {
         </CardHeader>
         <CardBody className="px-2 pb-0">
           <Chart {...chartConfig} />
+          <Typography variant="small" color="gray" className="max-w-sm md:flex-row md:items-center font-normal">
+            Intensity of drip flow
+           </Typography>
         </CardBody>
       
       </Card>
+      </div>
     );
   }

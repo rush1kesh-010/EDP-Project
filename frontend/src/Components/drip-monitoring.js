@@ -7,9 +7,10 @@ import dn from "../Images/down.png";
 import colour from "../Images/Vector 4.png";
 export default function DripMonitoring() {
   return (
-    <div className="bg-[white] p-2 rounded-xl">
+    <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 ">
+
       <h1 className="text-lg text-start font-normal border-b-2 border-zinc-300 text-[#4c4c4c]">
-        Vital Monitoring
+        Drip Monitoring
       </h1>
       <div className="flex justify-between p-2">
         <div>

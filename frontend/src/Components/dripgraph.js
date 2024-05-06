@@ -83,7 +83,7 @@ import {
         strokeDashArray: 0,
         xaxis: {
           lines: {
-            show: true,
+            show: false,
           },
         },
         padding: {
@@ -102,6 +102,7 @@ import {
    
   export default function DripIntenseGraph() {
     return (
+        <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 ">
       <Card>
         <CardHeader
           floated={false}
@@ -109,17 +110,18 @@ import {
           color="transparent"
           className="flex flex-col gap-4 rounded-none md:flex-row md:items-center"
         >
-          
-         
         </CardHeader>
         <CardBody className="px-2 pb-0">
           <Chart {...chartConfig} />
-        </CardBody>
-        <div>
+          <div>
            <Typography variant="small" color="gray" className="max-w-sm md:flex-row md:items-center font-normal">
             Intensity of drip flow
            </Typography>
            </div>
+         
+        </CardBody>
+        
       </Card>
+      </div>
     );
   }
