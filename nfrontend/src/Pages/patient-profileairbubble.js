@@ -10,9 +10,9 @@ import DrugAdministration from "../Components/drug-administration";
 import Allergies from "../Components/allergies";
 import MyCalender from "../Components/my-calender";
 import PatientSidebar from "../Components/common-comp/patient-sidebar";
-import PatientDrugAdministration from "../Components/patient-drug-administration";
 import PatientProfileTab from "../Components/common-comp/patient-profile-tab";
-export default function PatientProfile() {
+import AirBubbleTabComp from "../Components/airbubtabcomp";
+export default function PatientProfileAirnBubble() {
   return (
     <div>
       {/* ------------Header----------- */}
@@ -30,7 +30,10 @@ export default function PatientProfile() {
         {/* ----------- second section --------- */}
         <div className="col-span-12 lg:col-span-9 md:col-span-9 p-4">
           <PatientProfileTab/>
-          </div>
+         <AirBubbleTabComp/>
+        
+        </div>
+      
 
       </div>
     </div>
