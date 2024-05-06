@@ -29,7 +29,7 @@ export default function Header() {
         <div class="hidden   sm:ml-6 sm:block">
           <div class="flex  space-x-8">
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-            <a href="/dashboard" class=" text-[#0174cf] rounded-md px-2 py-2 text-base " aria-current="page">Home </a>
+            <a href="/home" class=" text-[#0174cf] rounded-md px-2 py-2 text-base " aria-current="page">Home </a>
             <a href="/patient-profile" class=" text-[#0174cf] rounded-md px-3 py-2 text-base " aria-current="page">Patient Profile</a>
             <a href="/#" class=" text-[#0174cf] rounded-md px-3 py-2 text-base " aria-current="page">Switch Account</a>
            

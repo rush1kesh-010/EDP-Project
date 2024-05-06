@@ -1,14 +1,6 @@
 import React from "react";
 import Header from "../Components/common-comp/header";
 import "../Css/home.css";
-import VitalMonitring from "../Components/vital-monitring";
-import AirBubble from "../Components/air-bubble";
-import RecentFile from "../Components/recent-file";
-import CheckUp from "../Components/check-up";
-import DripMonitoring from "../Components/drip-monitoring";
-import DrugAdministration from "../Components/drug-administration";
-import Allergies from "../Components/allergies";
-import MyCalender from "../Components/my-calender";
 import PatientSidebar from "../Components/common-comp/patient-sidebar";
 import PatientProfileTab from "../Components/common-comp/patient-profile-tab";
 import AirBubbleTabComp from "../Components/airbubtabcomp";

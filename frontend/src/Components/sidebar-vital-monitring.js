@@ -5,7 +5,7 @@ export default function SidebsrVitalMonitring() {
   return (
     <div className="bg-[white] p-2 rounded-xl">
                 <h1 className="text-lg text-start font-normal border-b-2 border-zinc-300 text-[#4c4c4c]">
-                  Vital Monitring
+                  Vital Monitoring
                 </h1>
                 <div className="p-2">
                   <div>
