@@ -90,7 +90,7 @@ export default function PulseGraph() {
     return (
 
       <Card>
-      <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 ">
+      <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 mb-2">
 
         <CardHeader
           floated={false}

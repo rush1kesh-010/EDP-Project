@@ -102,7 +102,7 @@ import {
    
   export default function DripIntenseGraph() {
     return (
-        <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 ">
+        <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 mb-3">
       <Card>
         <CardHeader
           floated={false}

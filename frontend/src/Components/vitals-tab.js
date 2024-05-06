@@ -12,7 +12,7 @@ export default function VitalMonitoringTabComp() {
              <div className="col-span-12 lg:col-span-8 md:col-span-7 my-4 mx-4">
                  <DataHistoryTable4/>
              </div>
-             <div className="col-span-12 lg:col-span-4 md:col-span-5 my-0 mx-0 md:my-4 md:mx-4 lg:my-4 lg:mx-4">
+             <div className="col-span-12 lg:col-span-4 md:col-span-5 my-0 mx-0 md:my-4 md:mx-4 lg:my-4 lg:mx-4 pb-2">
                 <VitalMonitring/> 
                 <PulseGraph/> 
                 <HeartRateGraph/>               
