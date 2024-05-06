@@ -9,10 +9,11 @@ import PatientProfile from './Pages/patient-profile';
 import PatientProfileAirnBubble from './Pages/patient-profileairbubble';
 import PatientProfileDrug from './Pages/patient-profiledrip';
 import PatientProfileDrip from './Pages/patient-profiledrug';
+import PatientProfilePrimaryDetails from './Pages/patient-profileprimarydetails';
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
+      <BrowserRouter>
      <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/login' element={<LoginPage/>}/>
@@ -22,6 +23,7 @@ function App() {
           <Route path='/patient-profileairbubble' element={<PatientProfileAirnBubble/>}/>
           <Route path='/patient-profiledrip' element={<PatientProfileDrug/>}/>
           <Route path='/patient-profiledrug' element={<PatientProfileDrip/>}/>
+          <Route path='/patient-profileprimarydetails' element={<PatientProfilePrimaryDetails/>}/>
      </Routes>
      </BrowserRouter>
     </div>

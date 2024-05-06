@@ -8,7 +8,7 @@ export default function CheckUp() {
     },
     {
       text: "Immediate X ray",
-      color: "#be0000"
+      color: "red"
     },
     {
       text: "anefhcbfu 15mg 1x1x1",
