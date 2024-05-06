@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Components/common-comp/header";
 import "../Css/home.css";
 import Sidebar from "../Components/common-comp/sidebar";
-import VitalMonitring from "../Components/vital-monitring";
+import VitalMonitoring from "../Components/vital-monitoring";
 import AirBubble from "../Components/air-bubble";
 import RecentFile from "../Components/recent-file";
 import CheckUp from "../Components/check-up";
@@ -39,7 +39,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-12 gap-4">
             {/* ------------ Vital Monitring ---------- */}
             <div className="col-span-12 lg:col-span-6 md:col-span-6  mt-2 ">
-              <VitalMonitring/>
+              <VitalMonitoring/>
             </div>
             {/* ------------ Air Bubble ---------- */}
             <div className="col-span-12 lg:col-span-6 md:col-span-6 mt-2 ">

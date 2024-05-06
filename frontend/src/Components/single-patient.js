@@ -3,8 +3,8 @@ import Imgp1 from "../Images/p-1.png";
 
 import bar from "../Images/barcode.png"
 import { Link } from "react-router-dom";
-import SidebsrVitalMonitring from "./sidebar-vital-monitring";
-import SidebsrDripMonitring from "./sidebar-drip-monitoring";
+import SidebarVitalMonitring from "./sidebar-vital-monitring";
+import SidebarDripMonitring from "./sidebar-drip-monitoring";
 import SidebarBubble from "./sidebar-air-bubble";
 import SidebarCurrentDrugs from "./sidebar-current-drugs";
 export default function SinglePatients() {
@@ -28,8 +28,8 @@ export default function SinglePatients() {
         </div>
       </div>
       </Link>
-      <SidebsrVitalMonitring/>
-      <SidebsrDripMonitring/>
+      <SidebarVitalMonitring/>
+      <SidebarDripMonitring/>
       <SidebarBubble/>
       <SidebarCurrentDrugs/>
     </div>
