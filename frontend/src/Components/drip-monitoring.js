@@ -7,7 +7,7 @@ import dn from "../Images/down.png";
 import colour from "../Images/Vector 4.png";
 export default function DripMonitoring() {
   return (
-    <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 ">
+    <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 mb-3">
 
       <h1 className="text-lg text-start font-normal border-b-2 border-zinc-300 text-[#4c4c4c]">
         Drip Monitoring

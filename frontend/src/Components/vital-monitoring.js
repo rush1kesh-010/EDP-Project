@@ -4,7 +4,7 @@ import Heart from '../Images/heart.png'
 
 export default function VitalMonitring() {
   return (
-    <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 ">
+    <div className="bg-[white] p-2 rounded-xl  border border-sky-500 mx-3 mb-3">
 
                 <h1 className="text-lg text-start font-normal border-b-2 border-zinc-300 text-[#4c4c4c]">
                   Vital Monitoring
