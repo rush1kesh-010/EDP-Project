@@ -36,7 +36,7 @@ export default function PatientProfileTab() {
       <Link to='/patient-profileprimarydetails' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('primarydetails')}`} onClick={() => handleTabClick('primarydetails')}>
         <p className='text-[20px] font-medium'>Primary details</p>
       </Link>
-      <Link to='/patient-profile' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('vitaldetails')}`} onClick={() => handleTabClick('vitaldetails')}>
+      <Link to='/patient-profilevitals' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('vitaldetails')}`} onClick={() => handleTabClick('vitaldetails')}>
         <p className='text-[20px] font-medium'>Vital details</p>
       </Link>
       <Link to='/patient-profiledrip' className={`py-2 px-2 w-56 rounded-t-full ${isTabActive('patientprofiledrip')}`} onClick={() => handleTabClick('patientprofiledrip')}>
