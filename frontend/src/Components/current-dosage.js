@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import dn from "../Images/down.png";
 import upl from "../Images/liup.png";
 import dnl from "../Images/ldown.png";
 import cross from "../Images/cross.png";
@@ -26,7 +25,7 @@ export default function CurrentDosage() {
             <option value="4">4. anefhcbfu</option>
           </select>
           <div className="flex gap-1 bg-[#f0f0f0] rounded  my-2">
-            <img src={play} />{" "}
+            <img alt="status" src={play} />{" "}
             <p className="text-[9px] text-[red]">
               The patient is allergic to the compo..
             </p>
@@ -38,7 +37,7 @@ export default function CurrentDosage() {
             <option value="4">4. anefhcbfu</option>
           </select>
           <div className="flex gap-1 bg-[#f0f0f0] rounded my-2">
-            <img src={play} />{" "}
+            <img alt="status" src={play} />{" "}
             <p className="text-[9px] text-green-600">
               The patient is allergic to the compo..
             </p>
@@ -50,7 +49,7 @@ export default function CurrentDosage() {
             <option value="4">4. anefhcbfu</option>
           </select>
           <div className="flex gap-1 bg-[#f0f0f0] rounded my-2">
-            <img src={play} />{" "}
+            <img alt="status" src={play} />{" "}
             <p className="text-[9px] text-green-600">
               The patient is allergic to the compo..
             </p>
@@ -65,14 +64,14 @@ export default function CurrentDosage() {
               </div>
 
               <div className="flex">
-                <img
+                <img alt="up"
                   className="w-6 h-6 mt-2"
                   onClick={() => {
                     setCount(count + 1);
                   }}
                   src={upl}
                 />
-                <img
+                <img alt="down"
                   className="w-6 h-6 mt-2"
                   onClick={() => {
                     setCount(count - 1);
@@ -83,7 +82,7 @@ export default function CurrentDosage() {
             </div>
 
             <div>
-              <img className="w-5 h-5 mt-3 " src={cross} />
+              <img alt="result" className="w-5 h-5 mt-3 " src={cross} />
             </div>
           </div>
           <div className="flex justify-around  ">
@@ -93,14 +92,14 @@ export default function CurrentDosage() {
               </div>
 
               <div className="flex">
-                <img
+                <img alt="up"
                   className="w-6 h-6 mt-2"
                   onClick={() => {
                     setCount1(count1 + 1);
                   }}
                   src={upl}
                 />
-                <img
+                <img alt="down"
                   className="w-6 h-6 mt-2"
                   onClick={() => {
                     setCount1(count1 - 1);
@@ -111,7 +110,7 @@ export default function CurrentDosage() {
             </div>
 
             <div>
-              <img className="w-5 h-5 mt-3 " src={right} />
+              <img alt="result" className="w-5 h-5 mt-3 " src={right} />
             </div>
           </div>
           <div className="flex justify-around  ">
@@ -121,14 +120,14 @@ export default function CurrentDosage() {
               </div>
 
               <div className="flex">
-                <img
+                <img alt="up"
                   className="w-6 h-6 mt-2"
                   onClick={() => {
                     setCount2(count2 + 1);
                   }}
                   src={upl}
                 />
-                <img
+                <img alt="down"
                   className="w-6 h-6 mt-2"
                   onClick={() => {
                     setCount2(count2 - 1);
@@ -139,7 +138,7 @@ export default function CurrentDosage() {
             </div>
 
             <div>
-              <img className="w-5 h-5 mt-3 " src={right} />
+              <img alt="result" className="w-5 h-5 mt-3 " src={right} />
             </div>
           </div>
         </div>
