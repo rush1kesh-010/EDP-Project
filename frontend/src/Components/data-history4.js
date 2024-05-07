@@ -17,24 +17,11 @@ const DataHistoryTable4 = () => {
   ]);
   const [editingIndex, setEditingIndex] = useState(null);
 
-  const handleEdit = (index) => {
-    setEditingIndex(index);
-  };
-
   const handleSave = (index, updatedData) => {
     const newData = [...data];
     newData[index] = updatedData;
     setData(newData);
     setEditingIndex(null);
-  };
-
-  const handleCancel = () => {
-    setEditingIndex(null);
-  };
-
-  const formatPulse = (Pulse) => {
-    const mbSize = (Pulse / 1000).toFixed(2);
-    return `${mbSize} MB`;
   };
 
   return (

@@ -1,0 +1,10 @@
+/* Logo.css */
+.rotating {
+    animation: spin 1s linear infinite; /* Apply the spin animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); } /* Start rotation from 0 degrees */
+    100% { transform: rotate(360deg); } /* Rotate to 360 degrees */
+  }
+  

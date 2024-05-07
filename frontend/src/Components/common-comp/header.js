@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../Images/color.svg";
 
 export default function Header() {
   return (
@@ -22,8 +23,11 @@ export default function Header() {
         </button> */}
       </div>
       <div class="flex flex-shrink-0 items-center">
-         <h1 className="text-3xl font-bold text-[#0174cf]">EDP</h1>
+        <img alt="logo" src={Logo} className="w-10 pr-1"></img>
+         <h1 className="text-3xl font-bold text-[#0174cf]"><a href="/home">FlowPro</a></h1>
+         <h3 className="text-sm text-[#0174cf] mt-2 pl-2">Crafting Change, One Life at a Time</h3>
         </div>
+        
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
        
         <div class="hidden   sm:ml-6 sm:block">

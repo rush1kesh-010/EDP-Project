@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <div className="col-span-9">
           <div className="flex items-center justify-evenly mt-4">
-          <img src={BannerImg} className="w-2/4" />
+          <img alt="" src={BannerImg} className="w-2/4" />
           </div>
          
          

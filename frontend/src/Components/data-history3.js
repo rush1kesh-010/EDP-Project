@@ -15,10 +15,6 @@ const DataHistoryTable2 = () => {
   ]);
   const [editingIndex, setEditingIndex] = useState(null);
 
-  const handleEdit = (index) => {
-    setEditingIndex(index);
-  };
-
   const handleSave = (index, updatedData) => {
     const newData = [...data];
     newData[index] = updatedData;
